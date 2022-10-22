@@ -1,8 +1,9 @@
 import * as monaco from 'monaco-editor'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export function Editor() {
   const editorRef = useRef(null)
+  const [ editorVal, setEditorVal ] = useState('')
 
   useEffect(() => {
     console.log('aa');
@@ -15,11 +16,11 @@ export function Editor() {
     monaco.editor.setTheme('vs-dark')
 
     editor.onDidChangeModelContent(()=> {
-      console.log(editor.getValue());
+      setEditorVal(editor.getValue())
     })
   }, [])
 
   return (
-    <div ref={editorRef} style={{width: '50%', height: '100%'}}></div>
+    <div ref={editorRef} style={{width: '100%', height: '100%'}}></div>
   )
 }

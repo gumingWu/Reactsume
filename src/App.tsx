@@ -3,7 +3,12 @@ import './App.less'
 function App() {
   return (
     <div className="App">
-      <Editor />
+      <div className='left'>
+        <Editor />
+      </div>
+      <div className="right">
+        <Resume />
+      </div>
     </div>
   )
 }
