@@ -1,13 +1,16 @@
 import './App.less'
+import { useState } from 'react'
 
 function App() {
+  const [ mdVal, setMdVal ] = useState('# Hello')
+
   return (
     <div className="App">
       <div className='left'>
-        <Editor />
+        <Editor mdVal={mdVal} setMdVal={setMdVal} />
       </div>
       <div className="right">
-        <Resume />
+        <Resume mdVal={mdVal} />
       </div>
     </div>
   )

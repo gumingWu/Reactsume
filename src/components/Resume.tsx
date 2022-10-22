@@ -1,5 +1,10 @@
-export function Resume() {
+interface ResumeProps {
+  mdVal?: string,
+  setMdVal?: (val: string) => void
+}
+
+export function Resume(props: ResumeProps) {
   return (
-    <div>我是resume</div>
+    <div>{props?.mdVal}</div>
   )
 }

@@ -1,22 +1,24 @@
 import * as monaco from 'monaco-editor'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 
-export function Editor() {
+interface EditorProps {
+  mdVal: string,
+  setMdVal: (val: string) => void
+}
+
+export function Editor(props: EditorProps) {
   const editorRef = useRef(null)
-  const [ editorVal, setEditorVal ] = useState('')
-
+  
   useEffect(() => {
-    console.log('aa');
-    
     const editor = monaco.editor.create(editorRef.current, {
-      value: '# Hello',
+      value: props.mdVal,
       language: 'markdown',
       automaticLayout: true
     })
     monaco.editor.setTheme('vs-dark')
 
     editor.onDidChangeModelContent(()=> {
-      setEditorVal(editor.getValue())
+      props.setMdVal(editor.getValue())
     })
   }, [])
 
