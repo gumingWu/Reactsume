@@ -1,4 +1,4 @@
-import './App.less'
+import './style/App.less'
 import { useState } from 'react'
 
 function App() {
@@ -6,11 +6,14 @@ function App() {
 
   return (
     <div className="App">
-      <div className='left'>
-        <Editor mdVal={mdVal} setMdVal={setMdVal} />
-      </div>
-      <div className="right">
-        <Resume mdVal={mdVal} />
+      <Header />
+      <div className="body">
+        <div className='left'>
+          <Editor mdVal={mdVal} setMdVal={setMdVal} />
+        </div>
+        <div className="right">
+          <Resume mdVal={mdVal} />
+        </div>
       </div>
     </div>
   )

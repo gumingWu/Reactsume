@@ -7,10 +7,10 @@ interface ResumeProps {
 }
 
 export function Resume(props: ResumeProps) {
-  const [md, setMd] = useState(props?.mdVal.replaceAll('\r\n', '\n'))
+  const [md, setMd] = useState(props?.mdVal)
 
   useEffect(() => {
-    setMd(props?.mdVal.replaceAll('\r\n', '\n'))
+    setMd(props?.mdVal)
   }, [props.mdVal])
 
   return (
