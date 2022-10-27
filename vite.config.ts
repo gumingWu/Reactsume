@@ -13,7 +13,9 @@ export default defineConfig({
     UnoCSS({
       shortcuts: [
         {
-          logo: "i-logos-create-react-app w-3em h-3em transform transition-800 hover:rotate-180",
+          logo: "i-logos-create-react-app w-2em h-2em transform transition-800 hover:rotate-180",
+          headerTitle:
+            "text-2xl c-transparent bg-clip-text select-none bg-gradient-to-r from-green-400 to-blue-400",
         },
       ],
       presets: [

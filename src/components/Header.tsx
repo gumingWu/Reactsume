@@ -1,10 +1,8 @@
-import '../style/Header.less'
-
 export function Header() {
   return (
-    <div className='w-100% h-12 bg-#1e1e1e' flex="~">
-      <div className="logo"></div>
-      <div className='text-2xl c-white'>Reactsume</div>
+    <div className='h-12 bg-#1e1e1e flex items-center px-8'>
+      <div className="logo mr-2"></div>
+      <div className='headerTitle'>Reactsume</div>
     </div>
   )
 }

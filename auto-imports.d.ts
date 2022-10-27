@@ -4,4 +4,5 @@ declare global {
   const Editor: typeof import('./src/components/Editor.tsx')['Editor']
   const Header: typeof import('./src/components/Header.tsx')['Header']
   const Resume: typeof import('./src/components/Resume.tsx')['Resume']
+  const ToolBar: typeof import('./src/components/ToolBar.tsx')['ToolBar']
 }
