@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@iconify-json/carbon': ^1.1.9
   '@iconify-json/logos': ^1.1.17
   '@mdx-js/rollup': ^2.1.4
   '@types/react': ^18.0.21
@@ -32,6 +33,7 @@ dependencies:
   remark-gfm: 3.0.1
 
 devDependencies:
+  '@iconify-json/carbon': 1.1.9
   '@iconify-json/logos': 1.1.17
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
@@ -341,6 +343,12 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@iconify-json/carbon/1.1.9:
+    resolution: {integrity: sha512-O3geRhhnE9dDDC4oT6qwBs7sdc37R9UqftiG7BP8YVDw8OcXv8i95J0ZEkIfdOXFj1Wb6kC/Uu/6VTlAqotVXg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
 
   /@iconify-json/logos/1.1.17:
     resolution: {integrity: sha512-N6xKFKZ9UD5thRAwv8TvBQD3MJQe17UnN7QtfXnAVjlcnMIvdZ1lkZ12S/kw38i2v8gIZ6i6B9Cng5NPzTWd/g==}

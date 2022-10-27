@@ -30,6 +30,7 @@
     "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
+    "@iconify-json/carbon": "^1.1.9",
     "@iconify-json/logos": "^1.1.17",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
