@@ -3,29 +3,36 @@ import { useState } from 'react'
 
 function App() {
   const [ mdVal, setMdVal ] = useState(`\
-  # Hello
+# Hello
 
-  **粗体**
-  
-  *斜体*
-  
-  ~~删除线~~
-  
-  ---
-  
-  [链接](https://github.com/gumingWu/Reactsume)
-  
-  > asdasdsa
-  >
-  > asdasds
-  > > asdaasd
-  
-  - asdasds
-  - sadasdas
-  
-  1. asdasds
-  2. asdasds
-  3. asdasds
+**粗体**
+
+*斜体*
+
+~~删除线~~
+
+---
+
+[链接](https://github.com/gumingWu/Reactsume)
+
+> asdasdsa
+>
+> asdasds
+> > asdaasd
+
+- asdasds
+- sadasdas
+
+1. asdasds
+2. asdasds
+3. asdasds
+
+* [ ] to do
+* [x] to do
+
+|标题1|标题2|
+|--|--|
+|asdsa|asdsa|
 `)
 
   return (

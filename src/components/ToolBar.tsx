@@ -19,6 +19,7 @@ export function ToolBar() {
       <div className="i-carbon-list hover:bg-sky-500" style={iconStyle} title="无序列表"></div>
       <div className="i-carbon-list-numbered hover:bg-sky-500" style={iconStyle} title="有序列表"></div>
       <div className="i-carbon-list-checked hover:bg-sky-500" style={iconStyle} title="检查列表"></div>
+      <div className="i-carbon-table-split hover:bg-sky-500" style={iconStyle} title="表格"></div>
     </div>
   )
 }
