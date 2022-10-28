@@ -2,7 +2,31 @@ import './App.less'
 import { useState } from 'react'
 
 function App() {
-  const [ mdVal, setMdVal ] = useState('# Hello')
+  const [ mdVal, setMdVal ] = useState(`\
+  # Hello
+
+  **粗体**
+  
+  *斜体*
+  
+  ~~删除线~~
+  
+  ---
+  
+  [链接](https://github.com/gumingWu/Reactsume)
+  
+  > asdasdsa
+  >
+  > asdasds
+  > > asdaasd
+  
+  - asdasds
+  - sadasdas
+  
+  1. asdasds
+  2. asdasds
+  3. asdasds
+`)
 
   return (
     <div className="App">
