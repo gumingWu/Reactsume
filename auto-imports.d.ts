@@ -3,6 +3,9 @@ export {}
 declare global {
   const Editor: typeof import('./src/components/Editor.tsx')['Editor']
   const Header: typeof import('./src/components/Header.tsx')['Header']
+  const Print: typeof import('./src/components/Print.tsx')['Print']
   const Resume: typeof import('./src/components/Resume.tsx')['Resume']
+  const SocialLinks: typeof import('./src/components/SocialLinks.tsx')['SocialLinks']
   const ToolBar: typeof import('./src/components/ToolBar.tsx')['ToolBar']
+  const User: typeof import('./src/components/User/index.tsx')['User']
 }

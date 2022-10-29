@@ -16,7 +16,7 @@ export default defineConfig({
           logo: "i-carbon-logo-react c-green-600 w-3em h-3em transform transition-800 hover:rotate-180",
           headerTitle:
             "text-2xl c-transparent bg-clip-text select-none bg-gradient-to-r from-green-400 to-blue-400",
-          headerIcon: 'text-3xl c-gray-300 cursor-pointer hover:c-white mx-2'
+          headerIcon: 'text-2xl c-gray-300 cursor-pointer hover:c-white mx-2'
         },
       ],
       presets: [
